@@ -19,3 +19,13 @@
         System.Console.WriteLine($"Birinchi son ikkinchi sondan kichik yoki teng:  {firstNumber <= secondNumber}");
         System.Console.WriteLine($"Birinchi son ikkinchi songa teng:  {firstNumber == secondNumber}");
         System.Console.WriteLine($"Birinchi son ikkinchi songa tengemas:  {firstNumber != secondNumber}");
+
+        if(firstNumber > secondNumber ){
+                System.Console.WriteLine("Birinchi son ikkinchi sondan katta");
+        }
+        else if(firstNumber == secondNumber ){
+                System.Console.WriteLine("Birinchi son Ikkinchi songa teng");
+        }
+        else {
+                System.Console.WriteLine("Ikkinchi son Birinchi sondan katta");
+        }
