@@ -7,18 +7,24 @@
         firstNumber = Convert.ToInt32 (Console .ReadLine());
         System.Console.Write("Ikkinchi sonni kiriring: ");
         secondNumber = Convert.ToInt32(Console .ReadLine());
-        System.Console.WriteLine($"Yig`indi: {firstNumber + secondNumber} ");
-        System.Console.WriteLine($"Ayirma: {firstNumber - secondNumber}" );
-        System.Console.WriteLine($"Bo`linma: {firstNumber / secondNumber}");
-        System.Console.WriteLine($"Ko`paytma: {firstNumber * secondNumber}");
-        System.Console.WriteLine($"Qoldiq: {firstNumber % secondNumber}" );
+        // System.Console.WriteLine($"Yig`indi: {firstNumber + secondNumber} ");
+        // System.Console.WriteLine($"Ayirma: {firstNumber - secondNumber}" );
+        // System.Console.WriteLine($"Bo`linma: {firstNumber / secondNumber}");
+        // System.Console.WriteLine($"Ko`paytma: {firstNumber * secondNumber}");
+        // System.Console.WriteLine($"Qoldiq: {firstNumber % secondNumber}" );
 
-        System.Console.WriteLine($"Birinchi son ikkinchi sondan katta:  {firstNumber > secondNumber}");
-        System.Console.WriteLine($"Birinchi son ikkinchi sondan kichik:  {firstNumber < secondNumber}");
-        System.Console.WriteLine($"Birinchi son ikkinchi sondan katta yoki teng:  {firstNumber >= secondNumber}");
-        System.Console.WriteLine($"Birinchi son ikkinchi sondan kichik yoki teng:  {firstNumber <= secondNumber}");
-        System.Console.WriteLine($"Birinchi son ikkinchi songa teng:  {firstNumber == secondNumber}");
-        System.Console.WriteLine($"Birinchi son ikkinchi songa tengemas:  {firstNumber != secondNumber}");
+        // System.Console.WriteLine($"Birinchi son ikkinchi sondan katta:  {firstNumber > secondNumber}");
+        // System.Console.WriteLine($"Birinchi son ikkinchi sondan kichik:  {firstNumber < secondNumber}");
+        // System.Console.WriteLine($"Birinchi son ikkinchi sondan katta yoki teng:  {firstNumber >= secondNumber}");
+        // System.Console.WriteLine($"Birinchi son ikkinchi sondan kichik yoki teng:  {firstNumber <= secondNumber}");
+        // System.Console.WriteLine($"Birinchi son ikkinchi songa teng:  {firstNumber == secondNumber}");
+        // System.Console.WriteLine($"Birinchi son ikkinchi songa tengemas:  {firstNumber != secondNumber}");
+        string message = 
+                firstNumber >= 0
+                        ? "1st number is positive"
+                        : "1st number is negative";
+        System.Console.WriteLine(message);
+
 
         if(firstNumber > secondNumber ){
                 System.Console.WriteLine("Birinchi son ikkinchi sondan katta");
