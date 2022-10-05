@@ -3,9 +3,9 @@
 
         int firstNumber;
         int secondNumber;
-        System.Console.Write("Birinchi sonni kiritn");
+        System.Console.Write("Birinchi sonni kiriting: ");
         firstNumber = Convert.ToInt32 (Console .ReadLine());
-        System.Console.Write("Ikkinchi sonni kiriring");
+        System.Console.Write("Ikkinchi sonni kiriring: ");
         secondNumber = Convert.ToInt32(Console .ReadLine());
         System.Console.WriteLine($"Yig`indi: {firstNumber + secondNumber} ");
         System.Console.WriteLine($"Ayirma: {firstNumber - secondNumber}" );
