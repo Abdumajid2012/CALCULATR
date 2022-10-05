@@ -3,7 +3,7 @@
 
         int firstNumber;
         int secondNumber;
-        System.Console.Write("Birinchi sonni kiriting");
+        System.Console.Write("Birinchi sonni kiritn");
         firstNumber = Convert.ToInt32 (Console .ReadLine());
         System.Console.Write("Ikkinchi sonni kiriring");
         secondNumber = Convert.ToInt32(Console .ReadLine());
