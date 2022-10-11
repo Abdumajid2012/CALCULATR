@@ -1,12 +1,28 @@
 ﻿using System;
 
 
-        int firstNumber;
-        int secondNumber;
+        decimal firstNumber;
+        decimal  secondNumber;
         System.Console.Write("Birinchi sonni kiriting: ");
-        firstNumber = Convert.ToInt32 (Console .ReadLine());
+        firstNumber = Convert.ToDecimal (Console .ReadLine());
+       
+         System.Console.WriteLine("Qanday amal bajaray  + , - , / , * ");
+        string   operation = Console .ReadLine();
         System.Console.Write("Ikkinchi sonni kiriring: ");
-        secondNumber = Convert.ToInt32(Console .ReadLine());
+        secondNumber = Convert.ToDecimal(Console .ReadLine());
+        //        switch (operation){
+        //         case "+" : 
+        //                 System.Console.WriteLine($"{firstNumber} + {secondNumber} = {firstNumber + secondNumber}"); break ;
+        //         case "-":
+        //                 System.Console.WriteLine($"{firstNumber} - {secondNumber} = {firstNumber - secondNumber}"); break ;
+        //         case "*":
+        //                 System.Console.WriteLine($"{firstNumber} * {secondNumber} = {firstNumber * secondNumber}"); break ;
+        //         case "/":
+        //                 System.Console.WriteLine($"{firstNumber} / {secondNumber} = {firstNumber / secondNumber}"); break ;
+        //         default :
+        //                 System.Console.WriteLine("Operesion Not Found"); break ;
+        // }
+  
         // System.Console.WriteLine($"Yig`indi: {firstNumber + secondNumber} ");
         // System.Console.WriteLine($"Ayirma: {firstNumber - secondNumber}" );
         // System.Console.WriteLine($"Bo`linma: {firstNumber / secondNumber}");
@@ -35,3 +51,26 @@
         else {
                 System.Console.WriteLine("Ikkinchi son Birinchi sondan katta");
         }
+              string password = "";
+
+        do{
+                System.Console.WriteLine("Enter password:.........");
+                password = Console .ReadLine();
+        }while(password != "Abdumajid2012");
+
+
+        int i = 0;
+        while (i<firstNumber ){
+                System.Console.WriteLine(i);
+                i +=2;
+                
+        }
+        
+
+        string  result = operation switch{
+                "+" => $"{firstNumber} + {secondNumber} = {firstNumber + secondNumber}",
+                "-" => $"{firstNumber} - {secondNumber} = {firstNumber - secondNumber}",
+                "*" => $"{firstNumber} * {secondNumber} = {firstNumber * secondNumber}",
+                "/" => $"{firstNumber} / {secondNumber} = {firstNumber / secondNumber}",
+                _   => "Operesion Not Found"
+        };
