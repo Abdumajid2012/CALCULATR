@@ -1,8 +1,35 @@
 ﻿using System;
+        double  firstNumber;
+        double   secondNumber ;
+        System.Console.Write("Birinchi sonni kiriting: ");
+        firstNumber = Convert.ToDouble(Console .ReadLine());
+        System.Console.WriteLine("Qanday amal bajaray  + , - , / , * ");
+        string   operation = Console.ReadLine();
+        System.Console.Write("Ikkinchi sonni kiriring: ");
+        secondNumber = Convert.ToDouble(Console .ReadLine());
+        //        switch (operation){
+        //         case "+" : 
+        //                 System.Console.WriteLine($"{firstNumber} + {secondNumber} = {firstNumber + secondNumber}"); break ;
+        //         case "-":
+        //                 System.Console.WriteLine($"{firstNumber} - {secondNumber} = {firstNumber - secondNumber}"); break ;
+        //         case "*":
+        //                 System.Console.WriteLine($"{firstNumber} * {secondNumber} = {firstNumber * secondNumber}"); break ;
+        //         case "/":
+        //                 System.Console.WriteLine($"{firstNumber} / {secondNumber} = {firstNumber / secondNumber}"); break ;
+        //         default :
+        //                 System.Console.WriteLine("Operesion Not Found"); break ;
+        // }
+        string  result = operation switch{
+                "+" => $"{firstNumber} + {secondNumber} = {firstNumber + secondNumber}",
+                "-" => $"{firstNumber} - {secondNumber} = {firstNumber - secondNumber}",
+                "*" => $"{firstNumber} * {secondNumber} = {firstNumber * secondNumber}",
+                "/" => $"{firstNumber} / {secondNumber} = {firstNumber / secondNumber}",
+                _   => "Operesion Not Found"
+        };
 
-
-        decimal  firstNumber;
-        decimal   secondNumber;
+        System.Console.WriteLine(result);
+        
+ 
         // System.Console.Write("Birinchi sonni kiriting: ");
         // firstNumber = Convert.ToInt32 (Console .ReadLine());
         // System.Console.Write("Ikkinchi sonni kiriring: ");
@@ -48,25 +75,3 @@
         //                 ? "1st and 2nd numbers are not positive"
         //                 : "1st and 2nd numbers are not negative";
         // System.Console.WriteLine(javob3);
-                System.Console.Write("Birinchi sonni kiriting: ");
-        firstNumber = Convert.ToDecimal (Console .ReadLine());
-        System.Console.WriteLine("Qanday amal bajaray  + , - , / , * ");
-         string operation = Console.ReadLine();
-
-        System.Console.Write("Ikkinchi sonni kiriring: ");
-        secondNumber = Convert.ToDecimal(Console .ReadLine());
-               switch (operation){
-                case "+" : 
-                        System.Console.WriteLine($"{firstNumber} + {secondNumber} = {firstNumber + secondNumber}"); break ;
-                case "-":
-                        System.Console.WriteLine($"{firstNumber} + {secondNumber} = {firstNumber + secondNumber}"); break ;
-                case "*":
-                        System.Console.WriteLine($"{firstNumber} * {secondNumber} = {firstNumber * secondNumber}"); break ;
-                case "/":
-                        System.Console.WriteLine($"{firstNumber} / {secondNumber} = {firstNumber / secondNumber}"); break ;
-                default :
-                        System.Console.WriteLine("Operesion Not Found"); break ;
-        }
-
-        
- 
